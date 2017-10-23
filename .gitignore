@@ -11,6 +11,7 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 
+application/config/setting/facebook.php
 application/config/database.php
 
 temp/*
