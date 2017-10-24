@@ -25,7 +25,18 @@ class Oa_controller extends Root_controller {
 
   public function __construct () {
     parent::__construct ();
-    $this->add_meta (array ('http-equiv' => 'Content-type', 'content' => 'text/html; charset=utf-8'));
+    $this->add_meta (array ('http-equiv' => 'Content-type', 'content' => 'text/html; charset=utf-8'))
+         ->add_meta (array ('name' => 'robots', 'content' => 'noindex,nofollow'))
+         ->add_meta (array ('name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui'))
+         ->add_meta (array ('name' => 'description', 'content' => '想要找尋Issue嗎？想要的話可以全部給你，去找吧！我把所有的Issue都放在那裡了。」 於是RD們為了龐大的Issue，紛紛航向「偉大的航道」。讓世界迎接「大Issue時代」！巷弄 Issue Fighter，讓我們來勵志成為巷弄中最強的「吵架王」吧！'))
+         ->add_meta (array ('property' => 'og:title', 'content' => 'Issue Fighter - 我是吵架王'))
+         ->add_meta (array ('property' => 'og:description', 'content' => '想要找尋Issue嗎？想要的話可以全部給你，去找吧！我把所有的Issue都放在那裡了。」 於是RD們為了龐大的Issue，紛紛航向「偉大的航道」。讓世界迎接「大Issue時代」！巷弄 Issue Fighter，讓我們來勵志成為巷弄中最強的「吵架王」吧！'))
+
+         ->add_meta (array ('property' => 'og:image', 'tag' => 'larger', 'content' => $img = res_url ('res', 'image', 'og', 'og.png'), 'alt' => 'Issue Fighter - 我是吵架王'))
+         ->add_meta (array ('property' => 'og:image:type', 'tag' => 'larger', 'content' => 'image/' . pathinfo ($img, PATHINFO_EXTENSION)))
+         ->add_meta (array ('property' => 'og:image:width', 'tag' => 'larger', 'content' => '1200'))
+         ->add_meta (array ('property' => 'og:image:height', 'tag' => 'larger', 'content' => '630'))
+         ;
   }
 
   protected function set_componemt_path () {
