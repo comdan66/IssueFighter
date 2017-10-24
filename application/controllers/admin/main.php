@@ -9,6 +9,8 @@
 class Main extends Admin_controller {
 
   public function index () {
-    $this->load_view ();
+    return $this->load_view (array (
+      'nurl' => base_url ('admin'),
+    ));
   }
 }

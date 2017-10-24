@@ -9,6 +9,6 @@
 class Main extends Site_controller {
 
   public function index () {
-    return $this->load_view ();
+    return redirect_message (array ('admin'), array ());
   }
 }

@@ -69,7 +69,8 @@
       @include box-shadow(inset 0 0 1px rgba(0, 0, 0, .1));
     }
     &:after {
-      content: "✔";
+      content: "\e905";
+      font-family: "admin"; speak: none; font-style: normal; font-weight: normal; font-variant: normal;
       @content;
 
       left: 2px;

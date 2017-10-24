@@ -2,7 +2,7 @@
 jQuery.timeago.settings.strings = {
   prefixAgo: null,
   prefixFromNow: "從現在開始",
-  suffixAgo: "之前",
+  suffixAgo: "前",
   suffixFromNow: null,
   seconds: "不到 1 分鐘",
   minute: "約 1 分鐘",

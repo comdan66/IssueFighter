@@ -5,3 +5,12 @@
  */
 
 @import "_oa";
+
+._w {
+  display: inline-block;
+  width: 100%;
+  margin-top: 16px !important;
+  + #user {
+    margin-top: 32px !important;
+  }
+}
