@@ -6,11 +6,38 @@
   @include font-smoothing(antialiased);
 }
 
+.icon-21:before {
+  content: "\e90c";
+}
+.icon-24:before {
+  content: "\e90e";
+}
+.icon-18:before {
+  content: "\e909";
+}
+.icon-23:before {
+  content: "\e993";
+}
+.icon-17:before {
+  content: "\e9ac";
+}
+.icon-22:before {
+  content: "\ea07";
+}
 .icon-20:before {
   content: "\e90a";
 }
 .icon-19:before {
   content: "\e90b";
+}
+.icon-1:before {
+  content: "\e900";
+}
+.icon-2:before {
+  content: "\e901";
+}
+.icon-3:before {
+  content: "\e902";
 }
 .icon-5:before {
   content: "\e5dc";
@@ -59,16 +86,4 @@
 }
 .icon-15:before {
   content: "\e9db";
-}
-.icon-18:before {
-  content: "\e909";
-}
-.icon-23:before {
-  content: "\e993";
-}
-.icon-17:before {
-  content: "\e9ac";
-}
-.icon-22:before {
-  content: "\ea07";
 }

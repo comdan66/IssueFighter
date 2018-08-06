@@ -11,30 +11,11 @@
   </div>
 
   <div class='r'>
-    <div>
-      <b>issue 篇數</b>
-      <span><?php echo number_format (count ($obj->issues));?> 篇</span>
-    </div>
-    
-    <div>
-      <b>留 言 次 數</b>
-      <span><?php echo number_format (count ($obj->comments));?> 次</span>
-    </div>
-    
-    <div>
-      <b>登 入 次 數</b>
-      <span><?php echo number_format ($obj->cnt_login);?> 次</span>
-    </div>
-
-    <div>
-      <b>上 次 登 入</b>
-      <time datetime='<?php echo $obj->logined_at->format ('Y-m-d H:i:s');?>'><?php echo $obj->logined_at->format ('Y-m-d H:i:s');?></time>
-    </div>
-    
-    <div>
-      <b>註 冊 日 期</b>
-      <time datetime='<?php echo $obj->created_at->format ('Y-m-d H:i:s');?>'><?php echo $obj->created_at->format ('Y-m-d H:i:s');?></time>
-    </div>
+    <div><b>issue 篇數</b><span><?php echo number_format (count ($obj->issues));?> 篇</span></div>
+    <div><b>留 言 次 數</b><span><?php echo number_format (count ($obj->comments));?> 次</span></div>
+    <div><b>登 入 次 數</b><span><?php echo number_format ($obj->cnt_login);?> 次</span></div>
+    <div><b>上 次 登 入</b><time datetime='<?php echo $obj->logined_at->format ('Y-m-d H:i:s');?>'><?php echo $obj->logined_at->format ('Y-m-d H:i:s');?></time></div>
+    <div><b>註 冊 日 期</b><time datetime='<?php echo $obj->created_at->format ('Y-m-d H:i:s');?>'><?php echo $obj->created_at->format ('Y-m-d H:i:s');?></time></div>
     
     <div>
       <b>擁 有 權 限</b>
@@ -44,6 +25,5 @@
   <?php } ?>
       </div>
     </div>
-
   </div>
 </div>
